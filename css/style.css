@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.encabezado{
+    background-color: #001a32; 
+    width: 100%;
+    border: solid 5px; color: #001a32;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+.encabezado img{
+    width: 200px;
+    height: 200px;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+    align-content: center;
+}
+.encabezado ul{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.encabezado li{
+    list-style-type: none;
+    margin-right: 15px;
+}
+.encabezado a{
+    color:blueviolet;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    width: auto;
+}
+.encabezado .menu{
+    display: none;
+}
+.encabezado a:hover{
+    text-decoration: underline;
+}
+.imgprincipal{
+    background-image: url("../multimedia/imagenes/foto\ grande.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+.imgprincipal h2{
+    color: blueviolet;
+    font-size: 48px;
+}
+
+.nosotros {
+    background-color: #001a32;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.nosotros a img{ 
+    border-radius: 50%;
+
+}
+
+.cuerpomedico {
+    background-color: #001a32;
+    border: solid 4px; color: blueviolet;
+    display: flex;  
+}
+
+.veterinaria{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border: solid 5px; color: blueviolet;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.veterinaria img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+}
+.veterinaria h2{
+    color:violet;
+    text-align: center;
+}
+.veterinaria p{
+    color:crimson;
+    text-align: center;
+}
+
+.servicios{
+    border: solid 3px; color:#001a32; 
+}
+.carousel-item{
+    width: 100%;
+    height: 500px;
+   
+}
+.servicios  ul li{
+    background-color: white;
+    color: blueviolet;
+    font-size: 30px;
+    padding: 30px;
+    list-style: none;
+}
+
+.petshop ul li a{
+    font-size: 30px;
+    margin-top: 0%;
+    text-decoration: none;
+}
+
+.perros h2{
+    color: #ee82ee;
+    text-align: center;
+}
+.perros img{
+    width: 100%;
+    height: 200px;
+}
+.tarjetasperros{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.tarjeta{
+    background-color:white;
+    width: 300px;
+    margin: 20px;
+    border: solid 2px; color:blueviolet;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.tarjeta h3{
+    color:#ee82ee;
+    font-family: 'Poppins', sans-serif;
+}
+.tarjeta h4{
+    color:#001a32;
+    font-family: 'Poppins', sans-serif;
+}
+.tarjeta img{
+    width: 200px;
+}
+.tarjeta label{
+    font-family: 'Poppins', sans-serif;
+}
+.tarjeta button{
+    background-color: white;
+    border: solid 2px #001a32;
+    color:#001a32;
+    font-family: 'Poppins', sans-serif;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+}
+.mapa iframe {
+    border-radius: 20%;
+    width: 100%;
+    height: 50%;
+}
+
+.informacion{
+    justify-content: center;
+}
+.contactos {
+    border: solid; color: #001a32;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;   
+    height: 30%; 
+}
+
+.informacion__selec{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+}
+
+.contactos input {
+    border: solid; color: #001a32;
+    margin: 10px;
+}
+.contactos textarea{
+    border: solid; color: #001a32;
+    font-family: 'Poppins', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    
+}
+.contactos .boton button {
+    background-color: #001a32;
+    border: solid; color: #001a32;
+    margin: 10px;
+    padding: 10px 10px;
+    text-align: center ;
+    height: 10%;
+    width: 10%;
+}
+.boton{
+    background-color: #001a32;
+    border: solid; color: #001a32;
+    color: white;
+    padding: 10px, 15px;
+    
+}
+.piedepagina{
+    background-color: #001a32;
+    border: solid; color: #001a32; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.piedepagina .listapie{
+    color: #ee82ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.piedepagina .info{
+    color: rgb(238, 130, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;  
+}
+.piedepagina .info .mapa{
+    width: 90%;
+    height: 200px;
+    padding: 10px; 
+}
+.piedepagina .iconosredes a{
+    font-size: 42px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;   
+}
+
+@media(max-width:768px) {
+    .encabezado .menu{
+        display: block;
+        font-size: 30px;
+        order: -2; 
+    }
+    .encabezado .menu:hover + ul{
+        right: 0;
+    }
+    .encabezado ul:hover{
+        right: 0px;
+    }
+    .encabezado ul{
+        position: fixed;
+        top: 0;
+        right: -500px;
+        background-color: white;
+        width: 70vw;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding-top: 100px;
+        transition: 0.5s;
+    }
+    .encabezado ul li a{
+        color: blueviolet;
+    }
+    .nosotros {
+        background-color: #001a32;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+}
