@@ -57,6 +57,7 @@
 .imgprincipal h2{
     color: blueviolet;
     font-size: 48px;
+    text-align: center;
 }
 
 .nosotros {
@@ -249,11 +250,10 @@
 .piedepagina .listapie{
     color: #ee82ee;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    flex-direction: column;  
+}
+.listapie ul{
+    list-style-type: none;
 }
 .piedepagina .info{
     color: rgb(238, 130, 238);
@@ -266,7 +266,8 @@
 .piedepagina .info .mapa{
     width: 90%;
     height: 200px;
-    padding: 10px; 
+    align-content: center;
+   
 }
 .piedepagina .iconosredes a{
     font-size: 42px;
@@ -276,7 +277,41 @@
     text-decoration: none;   
 }
 
+@media(max-width:1050px) {
+
+    .cuerpomedico {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .veterinaria__peluqueria{
+        grid-column: 1/3;
+    }
+    .contactos {
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;   
+        height: 30%; 
+    }
+    .informacion__selec{
+        display: block;
+        text-align: center;
+    }   
+    .servicios__lista {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+  
+}
+ 
 @media(max-width:768px) {
+    .imgprincipal{
+        background-image: url(../multimedia/imagenes/foto\ vertical.png)
+       
+    }
     .encabezado .menu{
         display: block;
         font-size: 30px;
@@ -292,7 +327,7 @@
         position: fixed;
         top: 0;
         right: -500px;
-        background-color: white;
+        background-color:#001a32d2;
         width: 70vw;
         height: 100vh;
         flex-direction: column;
@@ -310,6 +345,13 @@
         display: flex;
         flex-direction: column;
         justify-content: center;    
+        align-items: center;
     }
+    .cuerpomedico {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+      }
 }
+
