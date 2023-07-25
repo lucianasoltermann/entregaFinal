@@ -1,0 +1,81 @@
+.encabezado{
+    background-color: $bg-color; 
+    width: 100%;
+    border: solid 5px; color: $bg-color;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .menu{
+        display: none;
+        @media(max-width:768px){
+            display: block;
+        font-size: 30px;
+        order: -2; 
+        &:hover + ul{
+            right: 0
+        }
+        }
+    }
+    nav{ 
+        display: flex;
+        justify-content: end;
+        align-content: center;
+        
+    }
+    ul{ 
+        display: flex;
+        flex-direction: row;
+        align-self:center;
+        list-style-type: none;
+        margin-right: 15px;}
+
+    .item{ 
+        -webkit-animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-hor-center .5s cubic-bezier(.25,.46,.45,.94) both}
+        @for $item from 1 through 4{
+            .menu#{$item}{
+                animation-delay: $item*0.2s;
+            }
+        }
+        
+      
+
+    @media (max-width:768px){
+            position: fixed;
+            top: 0;
+            right: -600px;
+            background-color:$bg-color;
+            width: 70vw;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            padding-top: 100px;
+            transition: 0.5s;
+            &:hover{right: 0px;}
+        }
+    }
+    li{
+        list-style-type: none;
+        margin-right: 15px; 
+    }
+    a{
+        color: $main-color;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        width: auto;
+        &:hover{
+            text-decoration: underline;
+        }
+        @media(max-width:768px){
+            color: blueviolet;
+        }
+    }
+
+
+    
+ @-webkit-keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}@keyframes scale-in-hor-center{0%{-webkit-transform:scaleX(0);transform:scaleX(0);opacity:1}100%{-webkit-transform:scaleX(1);transform:scaleX(1);opacity:1}}

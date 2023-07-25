@@ -1,0 +1,46 @@
+
+.informacion {
+    display: flex;
+    justify-content: center;
+}
+.contactos {
+    border: solid; color: $bg-color;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;   
+    height: 30%; 
+    @media(max-width:1050px){
+        border: none;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;   
+        height: 30%; 
+    }
+    input{
+        border: solid; color: $bg-color;
+        margin: 10px;
+    }
+    textarea{
+        border: solid; color: $bg-color;
+        margin: 10px;
+        padding: 10px;
+    }
+    button {
+    @extend %boton;
+    }
+}
+.informacion__selec{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+    @media(max-width:1050px){
+        display: block;
+        text-align: center;
+    }
+}

@@ -1,0 +1,18 @@
+.imgprincipal{
+    background-image: url("../multimedia/imagenes/foto\ grande.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    h2{
+        color: $main-color;
+        font-size: 48px;
+        text-align: center;
+    }
+    @media(max-width:768px){
+        background-image: url(../multimedia/imagenes/imagen\ vertical.avif)
+       
+    }
+}
