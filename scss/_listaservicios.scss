@@ -1,14 +1,45 @@
 .servicios{
+    .descripcion__servicios{
+        color: $main-color;
+        font-size: 30px;
+        padding: 15px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+       
+    }
     border: solid ; color: $bg-color; 
     ul{
         color: $main-color;
         font-size: 30px;
-        padding: 30px;
+        margin: 30px;
         list-style: none;
-        @media(max-width:768px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        @media(max-width:1012px){
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
+            
             align-items: center;
+    }
+        h2{
+            text-align: center;
         }
+        li{
+            font-size: 20px;
+            margin: 35px;
+            text-align: justify;
+        }
+      
+    .col-4{
+        &:hover{
+            transform: scale(1.2)
+        }
+        @media(max-width:1012px){
+            width: 70%;
+        }
+    }
 }
 }

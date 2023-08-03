@@ -190,7 +190,7 @@ a:hover {
 .cuerpomedico div {
   background-color: white;
   width: 500px;
-  height: 500px;
+  height: 600px;
   border: solid 5px;
   color: blueviolet;
   padding: 10px;
@@ -213,6 +213,8 @@ a:hover {
   align-items: center;
 }
 .cuerpomedico p {
+  width: auto;
+  height: auto;
   color: crimson;
   text-align: center;
 }
@@ -222,7 +224,7 @@ a:hover {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (max-width: 868px) {
+@media (max-width: 1012px) {
   .cuerpomedico {
     display: flex;
     flex-direction: column;
@@ -354,17 +356,45 @@ a:hover {
   border: solid;
   color: #001a32;
 }
+.servicios .descripcion__servicios {
+  color: blueviolet;
+  font-size: 30px;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
 .servicios ul {
   color: blueviolet;
   font-size: 30px;
-  padding: 30px;
+  margin: 30px;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-@media (max-width: 768px) {
+@media (max-width: 1012px) {
   .servicios ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  }
+}
+.servicios ul h2 {
+  text-align: center;
+}
+.servicios ul li {
+  font-size: 20px;
+  margin: 35px;
+  text-align: justify;
+}
+.servicios ul .col-4:hover {
+  transform: scale(1.2);
+}
+@media (max-width: 1012px) {
+  .servicios ul .col-4 {
+    width: 70%;
   }
 }
 
